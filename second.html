@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let person={
+            name:'chaima',
+            age:19,
+            email:'chaima@gmail.com'
+        }
+
+        let idk={
+            name:'i',
+            age:50,
+            email:'chaima@gmail.com'
+        }
+
+        let cool={
+            name:'j',
+            age:31,
+            email:'chaima@gmail.com'
+        }
+
+        arr=[person,idk,cool]
+        function abovethirty(array){
+            let newarray=[]
+            for (let index = 0; index < array.length; index++) {
+                if(array[index].age>=30){
+                    newarray.push(array[index])
+                }                
+            }
+            return newarray
+        }
+
+       console.log(abovethirty(arr))
+
+    </script>
+</body>
+</html>
